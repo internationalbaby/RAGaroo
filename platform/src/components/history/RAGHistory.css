@@ -1,0 +1,64 @@
+.rag-page-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 140px !important;
+    margin-top: 30px !important;
+  }
+  
+  .rag-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin-top: 20px;
+  }
+  
+  .rag-list-item {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .rag-list-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rag-item-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #111827;
+  }
+  
+  .rag-item-description {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+  
+  .rag-item-meta {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    align-self: flex-end;
+    background-color: #f3f4f6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+  }

@@ -1,0 +1,119 @@
+.rag-lab-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    position: fixed;
+    left: 290px;
+    right: 0;
+    width: auto;
+    overflow: hidden;
+}
+
+.rag-lab-page form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+/* .input-label {
+    font-size: 14px;
+    color: #b4b4b4;
+    font-weight: 500;
+    padding-left: 4px;
+} */
+
+.input-name,
+.input-description {
+    width: 100%;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #000000;
+    transition: 0.25s;
+}
+
+.input-name:hover,
+.input-description:hover {
+    border-color: #999999;
+}
+
+.input-name:focus,
+.input-description:focus {
+    border-color: #00C7A9;
+    background: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 199, 169, 0.2);
+}
+
+.input-name::placeholder,
+.input-description::placeholder {
+    color: #999999;
+}
+
+.input-name.input-error {
+    border-color: #ff0000;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    padding-left: 4px;
+    visibility: hidden;
+}
+
+.error-message.visible {
+    visibility: visible;
+}
+
+.submit-button {
+    width: 100%;
+    background: #00C7A9;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+}
+
+.submit-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 12px #00c7a97e;
+    background: #00C7A9;
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+.submit-button:disabled {
+    background-color: #cccccc;
+    border-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}

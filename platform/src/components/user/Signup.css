@@ -1,0 +1,123 @@
+.signup-page {
+    background-blend-mode: overlay;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px; /* 로그인 페이지와 일치 */
+    padding: 40px;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 38px;
+    font-weight: 700;
+    color: #666666;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.input-group input,
+.input-group password-group {
+    width: 100%;
+    padding: 17px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.password-group {
+    position: relative;
+    width: 100%;
+}
+
+.password-group input {
+    width: 100%;
+    padding-right: 40px; /* 눈 모양 아이콘 공간 확보 */
+}
+
+/* 비밀번호 표시/숨기기 아이콘 */
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+    transition: color 0.2s;
+}
+
+.password-toggle:hover {
+    color: #333;
+}
+
+.signup-button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    line-height: 50px;
+    color: white;
+    background: #00C7A9;
+    box-shadow: 0 10px 15px rgb(186, 238, 230);
+    transition: 0.2s linear;
+    text-align: center;
+}
+
+/* 버튼 호버 효과 */
+.signup-button:hover {
+    box-shadow: 0 0 0 rgba(91, 144, 240, 0);
+    background: #01b99e;
+}
+
+.login-question {
+    color: #666;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.login-link a,
+.login-link Link {
+    color: #007bc7;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.login-link a:visited,
+.login-link Link:visited {
+    color: #007bc7;
+}

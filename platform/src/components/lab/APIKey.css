@@ -1,0 +1,125 @@
+.api-key-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    position: fixed;
+    left: 290px;  /* 사이드바 너비만큼 띄우기 */
+    right: 0;     /* 새로 추가 */
+    width: auto;  /* calc 제거하고 auto로 변경 */
+    overflow: hidden;
+}
+
+.api-key-container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.api-key-form {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.api-key-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.api-key-label {
+    font-size: 14px;
+    color: #b4b4b4;
+    font-weight: 500;
+    padding-left: 4px;
+}
+
+.api-key-input-name {
+    width: 100%;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #000000;
+    transition: 0.25s;
+}
+
+.api-key-input-name:hover {
+    border-color: #999999;
+}
+
+.api-key-input-name:focus {
+    border-color: #00C7A9;
+    background: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 199, 169, 0.2);
+}
+
+.api-key-input-name::placeholder {
+    color: #999999;
+}
+
+.api-key-submit-button {
+    width: 100%;
+    background: #00C7A9;
+    /* linear-gradient(135deg, #00C7A9, #00A896); */
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+}
+
+.api-key-submit-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 12px #00c7a97e;
+    background: #00C7A9;
+}
+
+.api-key-submit-button:active {
+    transform: translateY(0);
+}
+
+.status-message {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.status-message.success {
+    background-color: #e6ffe6;
+    color: #006600;
+}
+
+.status-message.error {
+    background-color: #ffe6e6;
+    color: #cc0000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

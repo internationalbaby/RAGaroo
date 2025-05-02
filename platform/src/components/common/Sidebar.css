@@ -1,0 +1,87 @@
+.ps-sidebar-root {
+    background-color: #191919 !important;
+    width: 290px !important;
+    height: 100vh !important;
+    position: fixed !important;
+    left: 0;
+    top: 0;
+}
+
+.ps-sidebar-container {
+    background-color: #191919 !important;
+    height: 100vh !important;
+    overflow: hidden !important;
+}
+
+.ps-menu-root {
+    background-color: #191919 !important;
+}
+
+.menu-item .ps-menu-button {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 5px !important;
+}
+
+.section-header .ps-menu-button {
+    color: #8C8C8C !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    pointer-events: none !important;
+    cursor: default !important;
+    margin-top: 35px !important;
+}
+
+.section-header .ps-menu-button:hover {
+    background-color: transparent !important;
+}
+
+.section-header:not(:last-child) + .menu-item:last-of-type .ps-menu-button {
+    margin-bottom: 0 !important;
+}
+
+/* MenuItem의 실제 DOM 요소에 대한 스타일 */
+.ps-menu-button:hover {
+    background-color: #272727 !important;
+    border-radius: 8px !important;
+    color: #FFFFFF !important;
+}
+
+.ps-menu-button {
+    color: #BABABA !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    margin: 0 15px !important;
+}
+
+/* 활성화된 MenuItem의 스타일 */
+.ps-menu-button.ps-active {
+    color: #FFFFFF !important;
+    background-color: #272727 !important;
+    border-radius: 8px !important;
+}
+
+/* 아이콘 스타일링 */
+.ps-menu-icon {
+    margin-right: 12px !important;
+    font-size: 16px !important;
+}
+
+.ps-menu-button {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.sb-logo-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sb-logo {
+    width: 10px;  /* 로고 크기 조절 */
+    height: auto;
+    margin-bottom: 20px;
+    /* background-color: #191919; */
+}
