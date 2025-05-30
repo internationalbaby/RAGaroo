@@ -21,7 +21,7 @@ function Login() {
         <div className="login-page">
             <img src="/re_symbol.png" alt="Logo" className="logo" />
             <div className="login-container">
-                <h1>Login</h1>
+                <h1>Sign In</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="input-group">
                         <input
@@ -49,14 +49,14 @@ function Login() {
                             {showPassword ? <FaEye /> : <FaEyeSlash />}
                         </span>
                     </div>
-                    <button type="submit" className="login-button">로그인</button>
+                    <button type="submit" className="login-button">Sign In</button>
                 </form>
                 <div className="separator">
                     <p>OR</p>
                 </div>
                 <div className="signup-link">
-                    <span className="signup-question">계정이 없으신가요?</span>{" "}
-                    <Link to="/imops-platform/user/signup">회원가입</Link>
+                    <span className="signup-question">Don't have an account?</span>{" "}
+                    <Link to="/imops-platform/user/signup">Sign Up</Link>
                 </div>
             </div>
         </div>

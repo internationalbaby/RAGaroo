@@ -14,13 +14,13 @@ function RAGLab() {
 
     const validateInput = (value) => {
         if (/^\d+$/.test(value)) {
-            return "실험 이름은 숫자로 시작할 수 없습니다.";
+            return "Title cannot be numbers only.";
         }
         if (/[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/.test(value)) {
-            return "실험 이름에는 한글을 사용할 수 없습니다.";
+            return "Korean characters are not allowed in the title.";
         }
         if (/[^a-zA-Z0-9\-]/.test(value)) {
-            return "실험 이름에는 영문자, 숫자, - 만 사용할 수 있습니다.";
+            return "Title may only contain letters, numbers, and hyphens (-).";
         }
         return '';
     };
@@ -46,12 +46,12 @@ function RAGLab() {
         e.preventDefault();
         
         if (!input || !description) {
-            alert('실험 이름과 설명을 모두 입력해주세요.');
+            alert('Enter both the experiment title and description.');
             return;
         }
     
         if (error || descriptionError) {
-            alert('입력값을 확인해주세요.');
+            alert('Please check your input.');
             return;
         }
     
@@ -62,8 +62,8 @@ function RAGLab() {
                 navigate('/imops-platform/lab/api-key');
             }, 1000);
         } catch (error) {
-            console.error('실험 저장 실패:', error);
-            alert('실험 저장에 실패했습니다. 다시 시도해주세요.');
+            console.error('Failed saving:', error);
+            alert('Failed to save the experiment. Please try again.');
         } finally {
             setIsLoading(false);
         }
@@ -76,24 +76,24 @@ function RAGLab() {
                     <div className="input-container">
                         <h1 style={{ color: 'black' }}>Experiment Setup</h1>
                         <div className="input-wrapper">
-                            {/* <label className="input-label">실험 이름</label> */}
+                            {/* <label className="input-label">Experiment Title</label> */}
                             <input 
                                 type="text"
                                 value={input}
                                 onChange={handleInputChange}
-                                placeholder="실험 이름을 입력해주세요"
+                                placeholder="Enter experiment title."
                                 className={`input-name ${error || duplicateError ? 'input-error' : ''}`}
                             />
                             <p className={`error-message ${error || duplicateError ? 'visible' : ''}`}>
                                 {duplicateError || error || ' '}
                             </p>
                             
-                            {/* <label className="input-label">실험 설명</label> */}
+                            {/* <label className="input-label">Experiment Description</label> */}
                             <input 
                                 type="text"
                                 value={description}
                                 onChange={handleDescriptionChange}
-                                placeholder="실험 설명을 입력해주세요"
+                                placeholder="Enter experiment description."
                                 className="input-description"
                             />
                             <p className={`description-message ${descriptionError ? 'visible' : ''}`}>{descriptionError || ' '}</p>

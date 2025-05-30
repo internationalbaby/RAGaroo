@@ -51,7 +51,7 @@ function QnALayout({ onRun, placeholder, responses = [], initialQuestion = '' })
                 <textarea
                     value={inputText}
                     onChange={(e) => setInputText(e.target.value)}
-                    placeholder={placeholder || "질문을 입력하세요."}
+                    placeholder={placeholder || "Enter your query."}
                     className="text-input"
                 />
             </div>
@@ -68,7 +68,7 @@ function QnALayout({ onRun, placeholder, responses = [], initialQuestion = '' })
                     value={outputTexts[currentOutputIndex] || ''}
                     readOnly
                     className="text-input"
-                    placeholder="결과가 여기에 표시됩니다."
+                    placeholder="Results will appear here."
                 />
             </div>
             <div className="pagination">

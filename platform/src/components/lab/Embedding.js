@@ -32,7 +32,7 @@ function Embedding() {
             setResponses(mockResponses);
         } catch (error) {
             console.error('Error in handleRun:', error);
-            setResponses(['처리 중 오류가 발생했습니다.']);
+            setResponses(['Error occurred during processing.']);
         }
     };
 

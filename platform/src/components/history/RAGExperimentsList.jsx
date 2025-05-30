@@ -23,7 +23,7 @@ const ExperimentsListPage = ({ selectedList, onBack, onExperimentClick }) => {
       window.URL.revokeObjectURL(url);
     } catch (error) {
       console.error('Download failed:', error);
-      alert('다운로드 중 오류가 발생했습니다.');
+      alert('Error occurred during download.');
     }
   };
 

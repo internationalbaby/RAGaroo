@@ -41,7 +41,7 @@ function PDFParse() {
         
         try {
             setParsingStatus('uploading');
-            setUploadStatus('파일 업로드 중입니다...');
+            setUploadStatus('Uploading file...');
             setTimeout(() => {
                 setUploadStatus('');
                 setIsUploadComplete(true);
@@ -49,9 +49,9 @@ function PDFParse() {
                 setParsingStatus('');
             }, 5000); // 5초로 변경
         } catch (error) {
-            console.error('파일 업로드 실패:', error);
+            console.error('File upload failed:', error);
             setParsingStatus('error');
-            setUploadStatus('파일 업로드에 실패했습니다.');
+            setUploadStatus('Unable to upload the file.');
             setTimeout(() => {
                 setUploadStatus('');
                 setIsUploadComplete(false);
@@ -128,7 +128,7 @@ function PDFParse() {
                             <label htmlFor="fileInput" 
                                 className={`upload-label ${isDragging ? 'dragging' : ''}`}
                             >
-                                PDF 파일을 드래그하거나 클릭하여 업로드하세요.
+                                Drag or click to upload a PDF file.
                             </label>
                         </div>
 
@@ -142,10 +142,10 @@ function PDFParse() {
 
                         <div className="parsing-status">
                             {parsingStatus === 'processing' && (
-                                <p className="status processing">PDF를 Parsing 중입니다...</p>
+                                <p className="status processing">Parsing PDF...</p>
                             )}
                             {parsingStatus === 'completed' && (
-                                <p className="status completed">PDF Parsing이 완료되었습니다!</p>
+                                <p className="status completed">PDF parsing completed.</p>
                             )}
                             {uploadStatus && (
                                 <p className={`status ${uploadStatus.includes('이미 존재') ? 'warning' : 'info'}`}>
@@ -155,7 +155,7 @@ function PDFParse() {
                         </div>
 
                         <div className="pdf-list-section">
-                            <div className="pdf-list-label">PDF 확인</div>
+                            <div className="pdf-list-label">View PDF</div>
                             <div className="pdf-list">
                                 {currentPDFs.map((pdf, index) => (
                                     <div key={index} className="pdf-item">

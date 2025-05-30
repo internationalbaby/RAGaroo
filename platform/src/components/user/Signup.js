@@ -48,13 +48,13 @@ function Signup() {
                             {showPassword ? <FaEye /> : <FaEyeSlash />}
                         </span>
                     </div>
-                    <button type="submit" className="signup-button">가입하기</button>
+                    <button type="submit" className="signup-button">Sign Up</button>
                 </form>
                 <div className="separator">
                     <p>OR</p>
                 </div>
                 <div className="login-link">
-                    <span className="login-question">이미 계정이 있으신가요?</span> <Link to="/imops-platform/user/login">로그인</Link>
+                    <span className="login-question">Already have an account?</span> <Link to="/imops-platform/user/login">Sign In</Link>
                 </div>
             </div>
         </div>

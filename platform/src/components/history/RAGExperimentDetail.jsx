@@ -45,13 +45,13 @@ const ExperimentDetailPage = ({ experiment, listName, onBack }) => {
         <div className="left-panel space-y-6">
           {/* Question Section */}
           <div className="bg-emerald-200 p-4 rounded">
-            <h2 className="font-bold mb-2">질문 :</h2>
+            <h2 className="font-bold mb-2">Query: </h2>
             <p>{experiment.question}</p>
           </div>
 
           {/* Answer Section */}
           <div className="bg-emerald-200 p-4 rounded">
-            <h2 className="font-bold mb-2">답변 :</h2>
+            <h2 className="font-bold mb-2">Response :</h2>
             <p>{experiment.answer}</p>
           </div>
 
@@ -169,7 +169,7 @@ const ExperimentDetailPage = ({ experiment, listName, onBack }) => {
                 onClick={() => setShowImageModal(true)}
                 className="check-chunk-button"
               >
-                Chunk 확인하기
+                View Chunk
               </button>
               <div className="start-time">
                 <div className="start-time-label">START TIME</div>

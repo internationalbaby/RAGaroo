@@ -19,12 +19,12 @@ function APIKey() {
 
     const handleSubmit = () => {
         if (Object.values(apiKeys).some(value => value.trim() === '')) {
-            setStatus('모든 API 키를 입력해주세요.');
+            setStatus('Enter all API keys.');
             setTimeout(() => setStatus(''), 2000);
             return;
         }
 
-        setStatus('API 키가 성공적으로 저장되었습니다.');
+        setStatus('API key saved successfully.');
         setTimeout(() => setStatus(''), 2000);
     };
 

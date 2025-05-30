@@ -40,7 +40,7 @@ function LLMParamsPrompt() {
             setResponses(mockResponses);
         } catch (error) {
             console.error('Error in handleRun:', error);
-            setResponses(['처리 중 오류가 발생했습니다.']);
+            setResponses(['Error occurred during processing.']);
         }
     };
 
@@ -120,13 +120,13 @@ function LLMParamsPrompt() {
                                 </div>
 
                                 <div className="prompt-input">
-                                    <label className="prompt-label">프롬프트</label>
+                                    <label className="prompt-label">Prompt</label>
                                     <textarea 
                                         className="prompt-textarea"
                                         value={prompt}
                                         onChange={(e) => setPrompt(e.target.value)}
                                         rows="4"
-                                        placeholder="프롬프트를 입력하세요."
+                                        placeholder="Input your prompt."
                                     />
                                 </div>
                             </div>

@@ -25,7 +25,7 @@ function Sidebar() {
                     active={isActive('/imops-platform/lab/rag-lab')}
                     onClick={() => navigate('/imops-platform/lab/rag-lab')}
                 >
-                    RAG Lab.
+                    RAG Lab
                 </MenuItem>
                 <MenuItem 
                     icon={<FaHistory />}
@@ -52,14 +52,14 @@ function Sidebar() {
                     active={isActive('/imops-platform/user/mypage')}
                     onClick={() => navigate('/imops-platform/user/mypage')}
                 >
-                    마이페이지
+                    My Account
                 </MenuItem>
                 <MenuItem 
                     icon={<FaSignOutAlt />}
                     className="menu-item"
                     onClick={handleLogout}
                 >
-                    로그아웃
+                    Sign Out
                 </MenuItem>
             </Menu>
         </ProSidebar>

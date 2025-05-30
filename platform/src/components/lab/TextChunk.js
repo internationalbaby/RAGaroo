@@ -40,7 +40,7 @@ function TextChunk() {
             setResponses(mockResponses);
         } catch (error) {
             console.error('Failed to process:', error);
-            setResponses(['처리 중 오류가 발생했습니다.']);
+            setResponses(['Processing failed due to an error.']);
         }
     };
 

@@ -6,8 +6,8 @@ function MyPage() {
     return (
         <Layout>
             <div>
-                <h1>마이페이지</h1>
-                <p>이 페이지는 아직 개발 중입니다.</p>
+                <h1>My Account</h1>
+                <p>This page is still under development</p>
             </div>
         </Layout>
     )

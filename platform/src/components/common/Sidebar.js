@@ -9,7 +9,7 @@ function Sidebar() {
     const location = useLocation();
 
     const handleLogout = () => {
-        if (window.confirm('로그아웃 하시겠습니까?')) {
+        if (window.confirm('Do you want to sign out?')) {
             navigate('/imops-platform/user/login');
         }
     };
@@ -20,7 +20,7 @@ function Sidebar() {
         <ProSidebar className="side-bar">
             <Menu>
                 {/* RAG 실험 섹션 */}
-                <MenuItem className="section-header">RAG 실험</MenuItem>
+                <MenuItem className="section-header">RAG Experiment</MenuItem>
                 <MenuItem 
                     icon={<FaFileAlt />}
                     className="menu-item"
@@ -62,7 +62,7 @@ function Sidebar() {
                     active={isActive('/imops-platform/lab/rag-lab')}
                     onClick={() => navigate('/imops-platform/lab/rag-lab')}
                 >
-                    RAG Lab.
+                    RAG Lab
                 </MenuItem>
                 <MenuItem 
                     icon={<FaHistory />}
@@ -89,14 +89,14 @@ function Sidebar() {
                     active={isActive('/imops-platform/user/mypage')}
                     onClick={() => navigate('/imops-platform/user/mypage')}
                 >
-                    마이페이지
+                    My Account
                 </MenuItem>
                 <MenuItem 
                     icon={<FaSignOutAlt />}
                     className="menu-item"
                     onClick={handleLogout}
                 >
-                    로그아웃
+                    Sign Out
                 </MenuItem>
             </Menu>
         </ProSidebar>
