@@ -12,4 +12,3 @@ npm install
 ```
 npm start
 ```
-# RAGaroo
