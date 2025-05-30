@@ -1,10 +1,6 @@
 # Advanced-RAG
-RAG 관련 코드
-```
-git clone https://github.com/2024-iMOps/Advanced-RAG.git
-```
 
-## 환경
+## Environment
 Runpod Pod Template
 
 - runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
